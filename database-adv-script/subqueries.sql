@@ -1,6 +1,5 @@
 -- create sub query
 
-
 SELECT Property.name, Property.property_id, Property.host_id, Property.description,
 Property.location, Property.pricepernight
 FROM Property
