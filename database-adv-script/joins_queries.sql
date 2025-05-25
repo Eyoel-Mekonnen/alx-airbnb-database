@@ -15,7 +15,8 @@ INNER JOIN User ON Booking.user_id = User.user_id;
 
 SELECT Property.property_id, Property.host_id, Property.name, Property.description, Property.location, Property.pricepernight, Review.review_id, Review.user_id, Review.rating, Review.comment
 FROM Property
-LEFT JOIN Review On Property.property_id = Review.property_id;
+LEFT JOIN Review On Property.property_id = Review.property_id
+ORDER BY Review.rating DESC;
 
 
 
