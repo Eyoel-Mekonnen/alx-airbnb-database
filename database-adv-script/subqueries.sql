@@ -7,7 +7,7 @@ WHERE Property.property_id IN (
     SELECT Review.property_id
     FROM Review
     GROUP BY Review.property_id
-    HAVING AVG(Review.rating) > 4
+    HAVING AVG(Review.rating) > 4.0
 );
 
 -- the outer qury is iterating on each row the command with is is being executed
